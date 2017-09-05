@@ -1,0 +1,19 @@
+html {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.header .menu-bar {
+  background-color: cadetblue;
+}
+
+.header .menu-bar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
