@@ -1,19 +1,56 @@
 html {
   font-size: 18px;
+  font-family: Helvetica;
 }
 
 .container {
   max-width: 960px;
+  margin: 0 auto;
 }
 
-.header .menu-bar {
-  background-color: cadetblue;
-}
+/* header */
+.header { background-image: url(../images/glasses-bg.png); background-size: cover; background-position: center; height: 30rem; }
+.header .menu-bar { padding-top: 1rem; }
 
 .header .menu-bar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
+  background-color: cadetblue;
   color: #fff;
+}
+
+.header .menu-bar a { color: #fff; text-decoration: none; }
+.header .menu-bar .site-name { display: flex; justify-content: flex-start; align-items: center; font-size: 1rem;}
+.header .menu-bar .site-name img { padding: 0 2rem 0 1rem; }
+.header .menu-bar nav { padding: 1rem 0; }
+.header .menu-bar nav span { padding: 0 2rem 0 0;}
+
+.header .banner { text-align: center; }
+.header .banner .container { display:flex; justify-content: flex-end;}
+.header .banner .headline { margin:10rem -2rem 0 0 ; padding: 1.5rem 5rem; background-color: #fff; font-size: 2rem; font-weight: bold; line-height: 1.2;}
+
+/* service */
+#services { display:flex; justify-content: center; margin: 3rem 0; }
+#services .ruler img, #services .truck img {max-width: 5rem;}
+#services .paper img {max-width: 3.5rem;}
+#services .service { display:flex; flex-flow:column nowrap; justify-content: space-between; align-items: center; padding: 0 3rem; width: 5rem; height: 8rem;}
+#services .service span { text-align: center;}
+
+.business-info .sections { display:flex; justify-content: center;}
+.business-info .info { display:flex; flex-direction: column; width: 35%; padding: 2.5%; }
+.business-info .info .title { background-color: cadetblue; color: white; font-weight: bold; font-size: 1rem; padding: 0.5rem 1.25rem; width: 10rem; }
+.business-info .info p { margin-top: 1rem;}
+.business-info { margin-bottom: 5rem;}
+
+.footer .container { padding: 4rem 1rem; display: flex; align-items: center; background-color: azure;}
+.footer .container img { height: 1.5rem; padding: 0 1rem 0 0;  }
+
+@media only screen and (max-width: 880px) {
+  .header .menu-bar { padding-top: 0; }
+  .header { height: 22rem; }
+  .header .banner .headline { margin:5rem 2rem 0 0 ; padding: 0.75rem 4rem; font-size: 1.33rem; }
+
 }
