@@ -9,7 +9,7 @@ html {
 }
 
 /* header */
-.header { background-image: url(../images/glasses-bg.png); background-size: cover; background-position: center; height: 30rem; }
+.header { background-image: url(../images/glasses-bg.png); background-size: cover; background-position: -5rem; height: 30rem; }
 .header .menu-bar { padding-top: 1rem; }
 
 .header .menu-bar .container {
@@ -24,9 +24,10 @@ html {
 
 .header .menu-bar a { color: #fff; text-decoration: none; }
 .header .menu-bar .site-name { display: flex; justify-content: flex-start; align-items: center; font-size: 1rem;}
-.header .menu-bar .site-name img { padding: 0 2rem 0 1rem; }
+.header .menu-bar .site-name img { padding: 0 2rem 0 1rem; height: 1.5rem; }
 .header .menu-bar nav { padding: 1rem 0; }
 .header .menu-bar nav span { padding: 0 2rem 0 0;}
+.header .menu-bar .menu2 { padding: 1rem 2rem 1rem 1rem; display: none; }
 
 .header .banner { text-align: center; }
 .header .banner .container { display:flex; justify-content: flex-end;}
@@ -53,4 +54,29 @@ html {
   .header { height: 22rem; }
   .header .banner .headline { margin:5rem 2rem 0 0 ; padding: 0.75rem 4rem; font-size: 1.33rem; }
 
+}
+
+@media only screen and (max-width: 610px) {
+  .header .menu-bar { padding-top: 0; }
+  .header .menu-bar .site-name span { display: none; }
+  .header .menu-bar nav { display: none; }
+  .header .menu-bar .menu2 { display: block; }
+  .header { height: 17rem; }
+  .header .banner { width: 100%; }
+  .header .banner .container { justify-content: center; }
+  .header .banner .headline { margin: 9rem 0; padding: 1rem 0; width: 100%; font-size: 1rem; }
+
+  #services { display:flex; flex-direction: column; justify-content: flex-start; align-items: center; margin: 3rem 0; }
+  #services .service { height: auto; }
+  #services .service img, #services .service span { padding: 0.77rem 0;}
+  #services span { font-size: 0.77rem; line-height: 1rem;}
+
+  .business-info .sections { flex-direction: column; width: 100%; }
+  .business-info .info { width: 100%; padding: 0; margin: 0 0 4rem 0; }
+  .business-info .info .title { width: 100%; margin: 0 0 1rem 0; }
+  .business-info .info p { font-size: 0.77rem; padding: 0 0.5rem; }
+  .business-info { margin-bottom: 0;}
+
+  .footer .container { justify-content: center; }
+  .footer .container span { display: none; padding: 0; }
 }
